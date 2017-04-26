@@ -1,3 +1,10 @@
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -12,8 +19,8 @@
 /****** headerの処理 ******/
 .myheader {
   position: fixed;
-  display: inline-block;
   width: 100%;
+  margin-bottom: 80px;
   top: 0;
   padding: 15px;
   background-color: #fff;
@@ -21,10 +28,7 @@
 }
 
 .header__bolt {
-  display: inline-block;
   float: left ;
-  left: 0;
-  line-height: 40px;
   background-color: #fff;
 }
 
@@ -66,6 +70,7 @@
 .Theme {
   height: 640px;
   text-align: center;
+  padding-top: 80px;
   background-color: #f2f2f2;
 }
 
@@ -88,13 +93,13 @@
   position: relative;
   padding-top: 50px;
   color: #fff;
+  font-size: 0;
   background-color: #74cfae;
 }
 
 .We_can_do__sid {
   display: inline-block;
   width: 40%;
-  float: left;
   text-align: center;
 }
 
@@ -102,8 +107,9 @@
   display: inline-block;
   width: 60%;
   max-width: 610px;
-  float: right;
   text-align: center;
+  vertical-align: top;
+  line-height: 1.2;
 }
 
 .We_can_do__h1 {
@@ -125,7 +131,6 @@
   text-align: center;
   margin:0 auto;
   padding-top: 60px;
-  max-width: 1130px;
   background-color: #f2f2f2
 }
 
@@ -137,7 +142,7 @@
 }
 
 .Work__list {
-  display: inline-block;
+  max-width: 1130px;
 }
 
 .Work__list > li {
@@ -157,12 +162,16 @@
 .Work__list > li:nth-child(n+4) {
   margin-top: 80px;
 }
+
+.Work__list_img {
+  vertical-align: bottom;
+}
+
 /* mail */
 .Work__Email {
   position: relative;
   display: inline-block;
-  margin-top: 90px;
-  margin-bottom: 70px;
+  margin: 90px 0 70px;
 }
 
 .Work__Email_left {
@@ -232,8 +241,6 @@
 
 .icon__list {
   position: relative;
-  margin-top: 200px;
-  margin-bottom: 200px;
   width: 740px;
   margin: 200px auto;
 }
@@ -260,8 +267,7 @@
   display: inline-block;
   width: 100%;
   text-align: right;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin: 20px 0 25px;
 }
 
 /****** ふレシポンシブ対応 ******/
@@ -276,8 +282,7 @@
   .We_can_do__txt {
     width: 100%;
     max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px;
   }
 
   .We_can_do__p {
@@ -293,12 +298,12 @@
     margin-left: 0;
   }
 
-  .Work__list > li:nth-child(4) {
-    margin-top: 80px;
-  }
-
   .Work__list > li:nth-child(n+4) {
     margin-top: 0;
+  }
+
+  .Work__list > li:nth-child(4) {
+    margin-top: 80px;
   }
 
   .Work__Email {
@@ -327,8 +332,7 @@
   /* スキル */
   .OUR_SKILS__list > li {
     float: none;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
   }
 
   .OUR_SKILS__list > li:last-child {
@@ -339,11 +343,13 @@
 @media screen and (max-width: 766px) {
 
   .nav {
+    float: none;
     display: none;
   }
 
   .nav.is-active {
     display: block;
+    float: none;
   }
 
   .header__btn {
@@ -354,14 +360,11 @@
   .header__contact {
     display: block;
     float: none;
-    margin: 0 auto;
-    margin-top: 70px;
   }
 
   .Theme__h1 {
     font-size: 80px;
-    margin-top: 160px;
-    margin-bottom: 20px;
+    margin:160px 0 20px;
   }
 
   .Theme__p {
@@ -375,12 +378,16 @@
   .We_can_do__txt {
     width: 100%;
     max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:20px 0 20px;
   }
 
   .We_can_do__p {
     max-width: 900px;
+  }
+
+  .Work__list_img {
+    width: 100%;
+    max-width: 300px;
   }
 
   .Work__list > li{
@@ -392,17 +399,19 @@
     margin-left: 0;
   }
 
-  .Work__list > li:nth-child(4) {
-    margin-top: 80px;
-  }
 
   .Work__list > li:nth-child(n+4) {
     margin-top: 0;
   }
 
+  .Work__list > li:nth-child(4) {
+    margin-top: 80px;
+  }
+
   .Work__Email {
     margin-top: 80px;
   }
+
   .Work__Email_left {
     float: none;
     width: 100%;
@@ -426,8 +435,7 @@
   /* スキル */
   .OUR_SKILS__list > li {
     float: none;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
   }
 
   .OUR_SKILS__list > li:last-child {
@@ -437,8 +445,7 @@
   /* アイコンの設定 */
   .icon__list {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom:0px;
+    margin: 50px 0 0;
   }
 
   .icon__list > li {
@@ -446,11 +453,4 @@
     width: 100%;
   }
 
-}
-
-.clearfix::before,
-.clearfix::after {
-  display: block;
-  content: "";
-  clear: both;
 }
