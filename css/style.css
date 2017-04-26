@@ -1,0 +1,456 @@
+.wrapper {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/****** headerの処理 ******/
+.myheader {
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  padding: 15px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.header__bolt {
+  display: inline-block;
+  float: left ;
+  left: 0;
+  line-height: 40px;
+  background-color: #fff;
+}
+
+.header__contact {
+  display: inline-block;
+  float: right;
+  padding: 14px 12px;
+  margin-right: 20px;
+  font-size: 12px;
+  background-color: #74cfae;
+  color: #fff;
+}
+
+.header__btn {
+  float: right;
+  display: none;
+  margin: 8px 0;
+  padding: 9px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-appearance: button;
+  background-color: #fff;
+}
+
+.header__btn__bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #ccc;
+}
+
+.header__btn > .header__btn__bar:not(:first-child) {
+  margin-top: 4px;
+}
+
+/****** Themeの処理 ******/
+.Theme {
+  height: 640px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.Theme__h1 {
+  font-size: 90px;
+  font-weight: 700;
+  padding-top: 250px;
+  margin-bottom: 20px;
+  color: #74cfae;
+}
+
+.Theme__p {
+  font-size: 30px;
+  margin-bottom:250px;
+  color: #c0c0c0;
+}
+
+/***** We_can_doの処理 *****/
+.We_can_do {
+  position: relative;
+  padding-top: 50px;
+  color: #fff;
+  background-color: #74cfae;
+}
+
+.We_can_do__sid {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.We_can_do__txt {
+  display: inline-block;
+  width: 60%;
+  max-width: 610px;
+  float: right;
+  text-align: center;
+}
+
+.We_can_do__h1 {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+.We_can_do__p {
+  display: inline-block;
+  word-break: break-all;
+  font-size: 20px;
+}
+
+/***** Workの処理 *****/
+/* コンテンツ */
+.Work {
+  text-align: center;
+  margin:0 auto;
+  padding-top: 60px;
+  max-width: 1130px;
+  background-color: #f2f2f2
+}
+
+.Work__h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+  color:#333;
+}
+
+.Work__list {
+  display: inline-block;
+}
+
+.Work__list > li {
+  float: left;
+  opacity: .7;
+  margin-left: 100px;
+}
+
+.Work__list > li:hover {
+  opacity: 1;
+}
+
+.Work__list > li:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.Work__list > li:nth-child(n+4) {
+  margin-top: 80px;
+}
+/* mail */
+.Work__Email {
+  position: relative;
+  display: inline-block;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+.Work__Email_left {
+  float: left;
+  width: 70%;
+}
+
+.Work__Email_txt {
+  text-align: center;
+  color: #333;
+  margin-right: 90px;
+}
+
+.Work__Emai_right {
+  float: right;
+  width: 30%;
+}
+
+.Work_Email_bottun {
+  float: left;
+  font-size: 12px;
+  padding: 14px 20px;
+  background-color: #74cfae;
+  color: #fff;
+}
+
+/***** OUR_SKILSの処理 *****/
+.OUR_SKILS {
+  background-color: #4e4e4e;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.OUR_SKILS__h1 {
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.OUR_SKILS__p1 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.OUR_SKILS__list {
+  display: inline-block;
+}
+
+.OUR_SKILS__list > li {
+  float: left;
+  margin-right: 180px;
+}
+
+.OUR_SKILS__list > li:last-child {
+  margin-right: 0;
+}
+
+/***** iconの処理 *****/
+.icon {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #74cfae;
+}
+
+.icon__list {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 740px;
+  margin: 200px auto;
+}
+
+.icon__list > li {
+  float: left;
+  text-align: center;
+  width: 185px;
+  height: 160px;
+  line-height: 160px;
+}
+
+.icon__list > li:hover {
+  background-color: #fff;
+}
+
+/****** myfooterの処理 *****/
+.myfooter {
+  background-color: #74cfae;
+  color: #fff;
+}
+
+.myfooter__label {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/****** ふレシポンシブ対応 ******/
+/* PC対応 */
+
+/* ぱっと対応 */
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .We_can_do__sid {
+    width: 100%;
+  }
+
+  .We_can_do__txt {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .We_can_do__p {
+    max-width: 900px;
+  }
+
+  .Work__list > li{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .Work__list > li:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  .Work__list > li:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .Work__list > li:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  .Work__Email {
+    margin-top: 80px;
+  }
+  .Work__Email_left {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .Work__Email_txt {
+    margin: 0 auto;
+  }
+
+  .Work__Emai_right {
+    width: 100%;
+  }
+
+  .Work_Email_bottun {
+    margin-bottom: 70px;
+    float: none;
+    text-align: center;
+  }
+
+  /* スキル */
+  .OUR_SKILS__list > li {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .OUR_SKILS__list > li:last-child {
+    margin-bottom: 80px;
+  }
+}
+/* スマホ対応 */
+@media screen and (max-width: 766px) {
+
+  .nav {
+    display: none;
+  }
+
+  .nav.is-active {
+    display: block;
+  }
+
+  .header__btn {
+    display: block;
+    margin-right: 15px;
+  }
+
+  .header__contact {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .Theme__h1 {
+    font-size: 80px;
+    margin-top: 160px;
+    margin-bottom: 20px;
+  }
+
+  .Theme__p {
+    margin-bottom: 130px;
+  }
+
+  .We_can_do__sid {
+    width: 100%;
+  }
+
+  .We_can_do__txt {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .We_can_do__p {
+    max-width: 900px;
+  }
+
+  .Work__list > li{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .Work__list > li:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  .Work__list > li:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .Work__list > li:nth-child(n+4) {
+    margin-top: 0;
+  }
+
+  .Work__Email {
+    margin-top: 80px;
+  }
+  .Work__Email_left {
+    float: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .Work__Email_txt {
+    margin: 0 auto;
+  }
+
+  .Work__Emai_right {
+    width: 100%;
+  }
+
+  .Work_Email_bottun {
+    margin-bottom: 70px;
+    float: none;
+    text-align: center;
+  }
+
+  /* スキル */
+  .OUR_SKILS__list > li {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .OUR_SKILS__list > li:last-child {
+    margin-bottom: 80px;
+  }
+
+  /* アイコンの設定 */
+  .icon__list {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom:0px;
+  }
+
+  .icon__list > li {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
