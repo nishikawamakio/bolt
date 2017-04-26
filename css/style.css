@@ -364,7 +364,6 @@
 
   .Theme__h1 {
     font-size: 80px;
-    margin:160px 0 20px;
   }
 
   .Theme__p {
@@ -378,7 +377,7 @@
   .We_can_do__txt {
     width: 100%;
     max-width: 100%;
-    margin:20px 0 20px;
+    margin: 20px 0 20px;
   }
 
   .We_can_do__p {
