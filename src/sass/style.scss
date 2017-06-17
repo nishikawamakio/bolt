@@ -1,0 +1,197 @@
+@import './variable';
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 40px;
+  background-color: #fff;
+
+  &__bolt {
+    float: left;
+  }
+  &__contact {
+    float: right;
+    padding: 14px 12px;
+    background-color: $conversionColor;
+    color: #fff;
+  }
+}
+
+.boltThem {
+  padding-top: 354px;
+  padding-bottom: 250px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: $backGroundGray;
+
+  h1 {
+    font-size: 90px;
+    font-weight: 700px;
+    margin-bottom: 20px;
+    color: $conversionColor;
+  }
+  p {
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+}
+
+.whatWeCanDo {
+  background-color: $conversionColor;
+  text-align: center;
+  position: relative;
+
+  &__iphone {
+    padding-top: 50px;
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+  }
+  &__text {
+    width: 60%;
+    color: #fff;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding-top: 75px;
+    max-width: 610px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.ourLatest {
+  background-color: $backGroundGray;
+  padding-top:60px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  ul {
+    li {
+      float: left;
+      margin-left: 100px;
+      margin-bottom: 80px;
+      box-sizing: border-box;
+      opacity: .7;
+    }
+    li:nth-child(3n+1) {
+      margin-left: 0;
+    }
+
+    li:nth-child(n+4) {
+      margin-top: 80px;
+    }
+
+    li:hover {
+      opacity: 1;
+    }
+  }
+
+  &__Email {
+    text-align: center;
+  }
+
+  &__text {
+    padding-bottom: 70px;
+    width: 45%;
+    margin-right: 90px;
+    display: inline-block;
+  }
+
+  &__button {
+    background-color: $conversionColor;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    padding: 14px 20px;
+  }
+}
+
+.OurSkills {
+  background-color: $backGroundDark;
+  text-align: center;
+  h2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  ul {
+    display: inline-block;
+    li {
+      float: left;
+      margin-right: 180px;
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+
+  p {
+    padding-bottom: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+.access {
+  background-color: $backGroundGray;
+  ul {
+    text-align: center;
+    li {
+      margin: 200px auto;
+      width: 185px;
+      height: 100px;
+      text-align: center;
+      line-height: 120px;
+      display: inline-block;
+      box-sizing: border-box;
+      color: $conversionColor;
+    }
+    li:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.footer {
+  background-color: $conversionColor;
+  color: #fff;
+  text-align: right;
+  padding: 20px 0 25px;
+}
