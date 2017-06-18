@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,6 +28,24 @@
     padding: 14px 12px;
     background-color: #74cfae;
     color: #fff; }
+  .header__btn {
+    float: right;
+    display: none;
+    margin: 8px 0;
+    padding: 9px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-color: #fff; }
+    .header__btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #ccc; }
+    .header__btn span:not(:first-child) {
+      margin-top: 4px; }
 
 .boltThem {
   padding-top: 354px;
@@ -86,6 +105,8 @@
     margin-top: 80px; }
   .ourLatest ul li:hover {
     opacity: 1; }
+  .ourLatest img {
+    vertical-align: bottom; }
   .ourLatest__Email {
     text-align: center; }
   .ourLatest__text {
@@ -143,3 +164,131 @@
   color: #fff;
   text-align: right;
   padding: 20px 0 25px; }
+
+/* フレキシブル対応 */
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  /* PAD対応 */
+  .whatWeCanDo__iphone {
+    padding-top: 50px;
+    display: inline-block;
+    text-align: center; }
+  .whatWeCanDo__text {
+    color: #fff;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    max-width: 610px; }
+  .whatWeCanDo h2 {
+    font-size: 24px;
+    margin-bottom: 35px; }
+  .whatWeCanDo p {
+    font-size: 20px;
+    margin-bottom: 25px; }
+  .ourLatest {
+    width: 100%;
+    text-align: center; }
+    .ourLatest ul li {
+      margin-left: 0;
+      margin-bottom: 0;
+      float: none; }
+    .ourLatest ul li:nth-child(3n) {
+      margin-bottom: 80px; }
+    .ourLatest ul li:nth-child(n+4) {
+      margin-top: 0; }
+    .ourLatest p {
+      max-width: 900px; }
+    .ourLatest__Email {
+      text-align: center;
+      padding-bottom: 70px; }
+    .ourLatest__text {
+      width: 100%;
+      padding-bottom: 40px;
+      display: block;
+      text-align: center; }
+  .OurSkills ul {
+    display: block; }
+    .OurSkills ul li {
+      float: none;
+      margin: 0 auto; }
+    .OurSkills ul li:last-child {
+      margin-right: 0; }
+  .OurSkills p {
+    padding-bottom: 88px; } }
+
+@media screen and (max-width: 766px) {
+  .header__contact {
+    float: none;
+    display: none; }
+  .header__contact.is-active {
+    float: none;
+    display: block;
+    margin-top: 60px; }
+  .header__btn {
+    display: block;
+    margin-right: 15px; }
+  .boltThem {
+    padding-top: 264px;
+    padding-bottom: 130px;
+    width: 100%;
+    display: block; }
+    .boltThem h1 {
+      font-size: 80px;
+      font-weight: 700px; }
+    .boltThem p {
+      font-size: 30px; }
+  .whatWeCanDo__iphone {
+    padding-top: 50px;
+    text-align: center; }
+  .whatWeCanDo__text {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px; }
+  .whatWeCanDo h2 {
+    font-size: 24px;
+    margin-bottom: 35px; }
+  .whatWeCanDo p {
+    font-size: 20px;
+    margin-bottom: 25px; }
+  .ourLatest {
+    width: 100%;
+    text-align: center; }
+    .ourLatest ul li {
+      margin-left: 0;
+      margin-bottom: 0;
+      float: none; }
+    .ourLatest ul li:nth-child(3n) {
+      margin-bottom: 80px; }
+    .ourLatest ul li:nth-child(n+4) {
+      margin-top: 0; }
+    .ourLatest p {
+      max-width: 900px; }
+    .ourLatest__Email {
+      text-align: center;
+      padding-bottom: 70px; }
+    .ourLatest__text {
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      display: block;
+      text-align: center; }
+  .OurSkills ul {
+    display: block; }
+    .OurSkills ul li {
+      float: none;
+      margin: 0 auto; }
+    .OurSkills ul li:last-child {
+      margin-right: 0; }
+  .OurSkills p {
+    padding-bottom: 88px; }
+  .access ul {
+    text-align: center;
+    padding: 50px 15px 15px 15px; }
+    .access ul li {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      box-sizing: border-box; }
+    .access ul li:hover {
+      background-color: #fff; } }
