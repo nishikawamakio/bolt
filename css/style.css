@@ -44,8 +44,8 @@
       height: 2px;
       border-radius: 1px;
       background-color: #ccc; }
-    .header__btn span:not(:first-child) {
-      margin-top: 4px; }
+      .header__btn span:not(:first-child) {
+        margin-top: 4px; }
 
 .boltThem {
   padding-top: 354px;
@@ -99,12 +99,12 @@
     margin-bottom: 80px;
     box-sizing: border-box;
     opacity: .7; }
-  .ourLatest ul li:nth-child(3n+1) {
-    margin-left: 0; }
-  .ourLatest ul li:nth-child(n+4) {
-    margin-top: 80px; }
-  .ourLatest ul li:hover {
-    opacity: 1; }
+    .ourLatest ul li:nth-child(3n+1) {
+      margin-left: 0; }
+    .ourLatest ul li:nth-child(n+4) {
+      margin-top: 80px; }
+    .ourLatest ul li:hover {
+      opacity: 1; }
   .ourLatest img {
     vertical-align: bottom; }
   .ourLatest__Email {
@@ -135,8 +135,8 @@
     .OurSkills ul li {
       float: left;
       margin-right: 180px; }
-    .OurSkills ul li:last-child {
-      margin-right: 0; }
+      .OurSkills ul li:last-child {
+        margin-right: 0; }
   .OurSkills p {
     padding-bottom: 100px;
     text-align: center;
@@ -156,8 +156,8 @@
       display: inline-block;
       box-sizing: border-box;
       color: #74cfae; }
-    .access ul li:hover {
-      background-color: #fff; }
+      .access ul li:hover {
+        background-color: #fff; }
 
 .footer {
   background-color: #74cfae;
@@ -192,10 +192,10 @@
       margin-left: 0;
       margin-bottom: 0;
       float: none; }
-    .ourLatest ul li:nth-child(3n) {
-      margin-bottom: 80px; }
-    .ourLatest ul li:nth-child(n+4) {
-      margin-top: 0; }
+      .ourLatest ul li:nth-child(3n) {
+        margin-bottom: 80px; }
+      .ourLatest ul li:nth-child(n+4) {
+        margin-top: 0; }
     .ourLatest p {
       max-width: 900px; }
     .ourLatest__Email {
@@ -211,8 +211,8 @@
     .OurSkills ul li {
       float: none;
       margin: 0 auto; }
-    .OurSkills ul li:last-child {
-      margin-right: 0; }
+      .OurSkills ul li:last-child {
+        margin-right: 0; }
   .OurSkills p {
     padding-bottom: 88px; } }
 
@@ -258,10 +258,10 @@
       margin-left: 0;
       margin-bottom: 0;
       float: none; }
-    .ourLatest ul li:nth-child(3n) {
-      margin-bottom: 80px; }
-    .ourLatest ul li:nth-child(n+4) {
-      margin-top: 0; }
+      .ourLatest ul li:nth-child(3n) {
+        margin-bottom: 80px; }
+      .ourLatest ul li:nth-child(n+4) {
+        margin-top: 0; }
     .ourLatest p {
       max-width: 900px; }
     .ourLatest__Email {
@@ -278,8 +278,8 @@
     .OurSkills ul li {
       float: none;
       margin: 0 auto; }
-    .OurSkills ul li:last-child {
-      margin-right: 0; }
+      .OurSkills ul li:last-child {
+        margin-right: 0; }
   .OurSkills p {
     padding-bottom: 88px; }
   .access ul {
@@ -290,5 +290,5 @@
       display: block;
       text-align: center;
       box-sizing: border-box; }
-    .access ul li:hover {
-      background-color: #fff; } }
+      .access ul li:hover {
+        background-color: #fff; } }

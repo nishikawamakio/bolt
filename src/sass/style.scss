@@ -29,6 +29,7 @@
   &__bolt {
     float: left;
   }
+
   &__contact {
     float: right;
     padding: 14px 12px;
@@ -53,9 +54,10 @@
       height: 2px;
       border-radius: 1px;
       background-color: #ccc;
-    }
-    span:not(:first-child) {
-      margin-top: 4px;
+
+      &:not(:first-child) {
+        margin-top: 4px;
+      }
     }
   }
 }
@@ -74,6 +76,7 @@
     margin-bottom: 20px;
     color: $conversionColor;
   }
+
   p {
     font-size: 30px;
     color: #c0c0c0;
@@ -91,6 +94,7 @@
     display: inline-block;
     text-align: center;
   }
+
   &__text {
     width: 60%;
     color: #fff;
@@ -113,7 +117,7 @@
 
 .ourLatest {
   background-color: $backGroundGray;
-  padding-top:60px;
+  padding-top: 60px;
 
   h2 {
     font-size: 24px;
@@ -128,17 +132,18 @@
       margin-bottom: 80px;
       box-sizing: border-box;
       opacity: .7;
-    }
-    li:nth-child(3n+1) {
-      margin-left: 0;
-    }
 
-    li:nth-child(n+4) {
-      margin-top: 80px;
-    }
+      &:nth-child(3n+1) {
+        margin-left: 0;
+      }
 
-    li:hover {
-      opacity: 1;
+      &:nth-child(n+4) {
+        margin-top: 80px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   img {
@@ -168,6 +173,7 @@
 .OurSkills {
   background-color: $backGroundDark;
   text-align: center;
+
   h2 {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -178,12 +184,14 @@
 
   ul {
     display: inline-block;
+
     li {
       float: left;
       margin-right: 180px;
-    }
-    li:last-child {
-      margin-right: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 
@@ -208,9 +216,10 @@
       display: inline-block;
       box-sizing: border-box;
       color: $conversionColor;
-    }
-    li:hover {
-      background-color: #fff;
+
+      &:hover {
+        background-color: #fff;
+      }
     }
   }
 }
@@ -231,6 +240,7 @@
       display: inline-block;
       text-align: center;
     }
+
     &__text {
       color: #fff;
       vertical-align: top;
@@ -239,15 +249,18 @@
       padding-top: 20px;
       max-width: 610px;
     }
+
     h2 {
       font-size: 24px;
       margin-bottom: 35px;
     }
+
     p {
       font-size: 20px;
       margin-bottom: 25px;
     }
   }
+
   .ourLatest {
     width: 100%;
     text-align: center;
@@ -256,12 +269,14 @@
         margin-left: 0;
         margin-bottom: 0;
         float: none;
-      }
-      li:nth-child(3n) {
-        margin-bottom: 80px;
-      }
-      li:nth-child(n+4) {
-        margin-top: 0;
+
+        &:nth-child(3n) {
+          margin-bottom: 80px;
+        }
+
+        &:nth-child(n+4) {
+          margin-top: 0;
+        }
       }
     }
     p {
@@ -269,8 +284,8 @@
     }
 
     &__Email {
-    text-align: center;
-    padding-bottom: 70px;
+      text-align: center;
+      padding-bottom: 70px;
     }
 
     &__text {
@@ -280,17 +295,20 @@
       text-align: center;
     }
   }
+
   .OurSkills {
     ul {
       display: block;
       li {
         float: none;
         margin: 0 auto;
-      }
-      li:last-child {
-        margin-right: 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
+
     p {
       padding-bottom: 88px;
     }
@@ -324,6 +342,7 @@
       font-size: 80px;
       font-weight: 700px;
     }
+
     p {
       font-size: 30px;
     }
@@ -334,21 +353,25 @@
       padding-top: 50px;
       text-align: center;
     }
+
     &__text {
       vertical-align: top;
       display: inline-block;
       text-align: center;
       padding-top: 20px;
     }
+
     h2 {
       font-size: 24px;
       margin-bottom: 35px;
     }
+
     p {
       font-size: 20px;
       margin-bottom: 25px;
     }
   }
+
   .ourLatest {
     width: 100%;
     text-align: center;
@@ -357,21 +380,24 @@
         margin-left: 0;
         margin-bottom: 0;
         float: none;
-      }
-      li:nth-child(3n) {
-        margin-bottom: 80px;
-      }
-      li:nth-child(n+4) {
-        margin-top: 0;
+
+        &:nth-child(3n) {
+          margin-bottom: 80px;
+        }
+
+        &:nth-child(n+4) {
+          margin-top: 0;
+        }
       }
     }
+
     p {
       max-width: 900px;
     }
 
     &__Email {
-    text-align: center;
-    padding-bottom: 70px;
+      text-align: center;
+      padding-bottom: 70px;
     }
 
     &__text {
@@ -382,21 +408,25 @@
       text-align: center;
     }
   }
+
   .OurSkills {
     ul {
       display: block;
       li {
         float: none;
         margin: 0 auto;
-      }
-      li:last-child {
-        margin-right: 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
+
     p {
       padding-bottom: 88px;
     }
   }
+
   .access {
     ul {
       text-align: center;
@@ -406,9 +436,10 @@
         display: block;
         text-align: center;
         box-sizing: border-box;
-      }
-      li:hover {
-        background-color: #fff;
+
+        &:hover {
+          background-color: #fff;
+        }
       }
     }
   }
