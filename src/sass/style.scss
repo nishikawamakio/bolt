@@ -319,12 +319,12 @@
   .header__contact {
     float: none;
     display: none;
-  }
 
-  .header__contact.is-active {
-    float: none;
-    display: block;
-    margin-top: 60px;
+    &.is-active {
+      float: none;
+      display: block;
+      margin-top: 60px;
+    }
   }
 
   .header__btn {
